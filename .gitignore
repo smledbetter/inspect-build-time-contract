@@ -29,3 +29,6 @@ htmlcov/
 *.swp
 *.swo
 .DS_Store
+
+# Author tooling (reads token from ~/.secrets/pypi-token)
+upload.sh

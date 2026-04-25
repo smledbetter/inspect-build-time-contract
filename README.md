@@ -69,7 +69,7 @@ Custom scorers are classified as `"unknown"` and fire the warning. To suppress, 
 
 I built [Jig](https://github.com/smledbetter/jig) around the idea that an LLM-eval framework should make "declare your deterministic check at build time" a first-class concept. A pre-registered N=50 study on BIRD-SQL ([results](https://github.com/smledbetter/jig/tree/main/experiments/bird_sql/results)) found a Sonnet 4.6 LLM-as-judge had a 40% false-approval rate against the deterministic execution-based scorer; a Haiku 4.5 judge had 10% false-approval rate. Even when the deterministic check is sitting right there, choosing model-graded is a measurable accuracy cost.
 
-This extension is a small experiment in surfacing that choice at task-definition time inside Inspect AI specifically. There's an upstream issue proposing the taxonomy + lint as in-core features at [`UKGovernmentBEIS/inspect_ai`](https://github.com/UKGovernmentBEIS/inspect_ai/issues/PENDING). If that lands, this package will be deprecated in favor of in-core support.
+This extension is a small experiment in surfacing that choice at task-definition time inside Inspect AI specifically. An upstream issue proposing the taxonomy + lint as in-core features will be filed at [`UKGovernmentBEIS/inspect_ai`](https://github.com/UKGovernmentBEIS/inspect_ai/issues); this README will be updated with the link once it's open. If the upstream lands, this package will be deprecated in favor of in-core support.
 
 ## Compatibility
 
